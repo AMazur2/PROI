@@ -1,0 +1,23 @@
+
+void menu ();
+int getInteger();
+float getFloat();
+void createFigure( ListOfFigures &lF );
+string createName( ListOfFigures &lF );
+string getColour();
+void createLineSeg( ListOfFigures &lF );
+void createTriangle( ListOfFigures &lF );
+void createRectangle( ListOfFigures &lF );
+void createCircle( ListOfFigures &lF );
+void createNewFigure( ListOfFigures &lF );
+void editMode( ListOfFigures &lF, ListOfGroups &lG  );
+void moveFigure( ListOfFigures &lF, ListOfGroups &lG );
+void rotateFigure( ListOfFigures &lF, ListOfGroups &lG );
+float getAngle();
+void rotAroPoint( ListOfFigures &lF, ListOfGroups &lG );
+void rotAroCenter( ListOfFigures &lF, ListOfGroups &lG );
+void scaleFigure( ListOfFigures &lF, ListOfGroups &lG );
+void scaleArouPoint( ListOfFigures &lF, ListOfGroups &lG );
+void scaleArouCenter( ListOfFigures &lF, ListOfGroups &lG );
+void setFigColour ( ListOfFigures &lF, ListOfGroups &lG );
+void createGroup( ListOfFigures &lF, ListOfGroups &lG  );
