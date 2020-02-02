@@ -1,5 +1,5 @@
 Temat : Prosty edytor grafiki 2D.
-Autor: Artur Mazur 300223
+Autor: Artur Mazur
 
 1. Opis rozwiązania zadania:
 
