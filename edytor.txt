@@ -9,7 +9,8 @@ W rozwiązaniu przyjąłem że każda figura będzie reprezentowana przez zbiór
 - kolor,
 ( - jedynie dla koła istnieje jeszcze promień).
 
-Przyjmujemy że prostokąt będzie stworzony pionowo lub poziomo. To pozwala nam na stworzenie tej figutry znając jedynie 2 z jej wierzchołków - wymagane jest aby te punkty należały do przekątnej figury.
+Przyjmujemy że prostokąt będzie stworzony pionowo lub poziomo. To pozwala nam na stworzenie tej figutry znając jedynie 2 z jej 
+wierzchołków - wymagane jest aby te punkty należały do przekątnej figury.
 
 
 2. Założenia wstępne:
@@ -20,31 +21,38 @@ Przyjmujemy że prostokąt będzie stworzony pionowo lub poziomo. To pozwala nam
 
 3. Podział na klasy:
 
--> Point - klasa w której zdefiniowana jest każda operacja która wymaga działania na punktach. Obiekty typu Point będą zawierały się w innych klasach jako wierzchołki.
--> Figure - klasa po której każda następna będzie dziedziczyła. Zawiera w sobie funkcje wirtualne które wedle potrzeby są nadpisywane w kolejnych klasach oraz vector wierzchołków.
+-> Point - klasa w której zdefiniowana jest każda operacja która wymaga działania na punktach. Obiekty typu Point będą zawierały się 
+w innych klasach jako wierzchołki.
+-> Figure - klasa po której każda następna będzie dziedziczyła. Zawiera w sobie funkcje wirtualne które wedle potrzeby są nadpisywane 
+w kolejnych klasach oraz vector wierzchołków.
 -> LineSeg 
 -> Triangle
 -> Rectangle
 -> Circle
--> Group - klasa slużąca później do grupowania obiektów. Umożliwia działanie na wszystkich obiektach klasy w jednym momencie ale nie wyklucza edycji tylko jednego z nich.
+-> Group - klasa slużąca później do grupowania obiektów. Umożliwia działanie na wszystkich obiektach klasy w jednym momencie ale 
+nie wyklucza edycji tylko jednego z nich.
 -> ListOfFigures - klasa przechowująca wszystkie figury które zostały stworzone podczas działania programu.
 -> ListOfGroups - klasa przechowująca listę wszystkich stworzonych grup.
 
 
 4. Interfejs użytkownika: 
 
-Włączając program wchodzimy do "Main menu". Z niego mamy dostęp do 2 różnych opcji: (a) kreowanie oraz (b) edycja. Wybór 0 wiąże się z zakończeniem działania programu.
+Włączając program wchodzimy do "Main menu". Z niego mamy dostęp do 2 różnych opcji: (a) kreowanie oraz (b) edycja. Wybór 0 wiąże się 
+z zakończeniem działania programu.
  
 ad.a) "Creator mode": tryb umożliwiający nam "rysowanie" figur. Możliwości - rysowanie:
 -> odcinka
 -> trójkąta
 -> prostokąta
 -> koła
--> dowolnej figury składającej się z n wierzchołków, gdzie n > 3. ( dla n = 3 i n = 2 tworzylibyśmy odpowiednio trójkąt i odcinek przy czym mamy gotowe funkcje służące do tego) 
+-> dowolnej figury składającej się z n wierzchołków, gdzie n > 3. ( dla n = 3 i n = 2 tworzylibyśmy odpowiednio trójkąt i odcinek 
+przy czym mamy gotowe funkcje służące do tego) 
 
-Do stworzenia każdej figury potrzeba: nazwy, koloru i w zależności od zapotrzebowania, różnej ilości wierzchołków czy innych własności - promień.
+Do stworzenia każdej figury potrzeba: nazwy, koloru i w zależności od zapotrzebowania, różnej ilości wierzchołków czy innych własności 
+- promień.
 
-Uwaga: Do stworzenia prostokata lub kwadratu potrzeba nam jedynie 2 wierzchołków. Wymagany jest fakt by były one umieszczone na przekątnej figury. Zakładamy dodatkowo ze te figura będzie narysowana pionowo lub poziomo.
+Uwaga: Do stworzenia prostokata lub kwadratu potrzeba nam jedynie 2 wierzchołków. Wymagany jest fakt by były one umieszczone 
+na przekątnej figury. Zakładamy dodatkowo ze te figura będzie narysowana pionowo lub poziomo.
 
 Tak jak poprzednio, wybór 0 powoduje wyjście do "Main menu".
 
@@ -56,7 +64,8 @@ ad.b) "Editor mode" : tryb do edycji wcześniej narysowanych figur. Funkcje:
 -> kolorowanie [5]
 -> grupowanie** [6]
 
-* obie te funkcje mają 2 tryby. Jedną z możliwości jest wykonanie operacji w odniesieniu się do podanego przez użytkownika punktu. Druga opcja umożliwia wykonanie działania na figurze w odniesieniu do jej środka.
+* obie te funkcje mają 2 tryby. Jedną z możliwości jest wykonanie operacji w odniesieniu się do podanego przez użytkownika punktu. 
+Druga opcja umożliwia wykonanie działania na figurze w odniesieniu do jej środka.
 
 **Głównym założeniem jest swobodna możliwość edycji wszystkich elementów na raz jak i każdego osobno. 
 
