@@ -75,10 +75,3 @@ a) Rotacja trójkąta o kąt 180 stopni względem punkt ( 0, 0 ). Wynik: ( -1, -
 b) Stworzenie koła o środku ( 1, 3 ) i promieniu 6.
 c) Stworzenie grupy gr1 z powyższych figur.
 d) zamiana koloru calej grupy na "Black". WYnik: wszystkie figury mają ustawione kolor na "Black".
-
-
-6. Usprawnienia:
-
--> Wprowadzenie clasy Colour przechowującej kolor figury i umożliwiającej jego edycję.
--> Wprowadzenie własnego kontenera zawierającego Punkty. Konieczne zmiany:
-a) Kontrola punktów:
